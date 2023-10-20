@@ -4,46 +4,78 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Website Teknologi</title>
-    <link rel="stylesheet" href="./style.css">  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
+
   <body>
-    <header>
-      <nav>
-        <h1 class="logo">
-          <span>Website Teknologi</span>
-        </h1>
-        <ul id="nav-menu">
-          <li><a href="#">Pendahuluan</a></li>
-          <li><a href="#image">Gambar</a></li>
-          <li><a href="#video">Video</a></li>
-          <li><a href="#contact">Kontak</a></li>
-          <li>
-            <form action="https://www.google.com/search" method="GET" target="_blank">
-              <input type="text" name="q" placeholder="Search on Google" required/>
-              <button type="submit">Search</button>
-            </form>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Dropdown </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- Pindahkan elemen ini ke kanan -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <main>
       <section id="hero">
         <div class="hero-content">
           <video src="bg.mp4" class="bg-video" muted loop autoplay></video>
           <div class="hero-text">
-            <h1>Selamat Datang di Dunia Teknologi!</h1>
+            <div class="rectangle-line">
+              <h1>Selamat Datang di Dunia Teknologi!</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="text">
+        <div class="text-container">
+          <img class="text-img" src="/artificial-intelligence-3382507_1920.jpg" alt="" />
+          <div class="text-content">
             <p><strong>Teknologi</strong> adalah keseluruhan sarana untuk menyediakan barang-barang yang diperlukan bagi kelangsungan dan kenyamanan hidup manusia.</p>
             <p>
               Penggunaan teknologi oleh manusia dimulai dengan pengubahan sumber daya alam menjadi alat-alat sederhana. Penemuan prasejarah tentang kemampuan mengendalikan api telah menaikkan ketersediaan sumber-sumber pangan, sedangkan
-              penciptaan roda telah membantu manusia dalam bepergian dan mengendalikan lingkungan mereka. <br> Perkembangan teknologi terbaru, termasuk di antaranya mesin cetak, telepon, dan Internet, telah memperkecil hambatan fisik terhadap
-              komunikasi dan memungkinkan manusia untuk berinteraksi secara bebas dalam skala global. Tetapi, tidak semua teknologi digunakan untuk tujuan damai. Pengembangan senjata penghancur yang semakin hebat telah berlangsung sepanjang
-              sejarah dari pentungan sampai senjata nuklir.
+              penciptaan roda telah membantu manusia dalam bepergian dan mengendalikan lingkungan mereka.
+            </p>
+            <p>
+              Perkembangan teknologi terbaru, termasuk di antaranya mesin cetak, telepon, dan Internet, telah memperkecil hambatan fisik terhadap komunikasi dan memungkinkan manusia untuk berinteraksi secara bebas dalam skala global.
+              Tetapi, tidak semua teknologi digunakan untuk tujuan damai. Pengembangan senjata penghancur yang semakin hebat telah berlangsung sepanjang sejarah dari pentungan sampai senjata nuklir.
             </p>
           </div>
         </div>
       </section>
-  
       <section id="image">
         <h1>Gambar</h1>
         <hr />
@@ -59,7 +91,7 @@
           <img src="https://asset-a.grid.id/crop/0x0:0x0/x/photo/2020/08/14/4285300588.jpg" alt="Gambar4" width="30%" height="15%" />
         </div>
       </section>
-  
+
       <section id="video">
         <h1>Video</h1>
         <hr />
@@ -71,11 +103,12 @@
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
+            allowfullscreen
+          >
           </iframe>
         </div>
       </section>
-  
+
       <section id="contact">
         <div class="contact-container">
           <h1>Kontak Kami</h1>
@@ -95,26 +128,50 @@
               </tr>
               <tr>
                 <td><label for="message">Message</label></td>
-                <td><textarea class="form-input" id="message" name="message" placeholder="Your message..." rows="4" required></textarea></td>
+                <td><textarea class="form-input" id="message" name="message" placeholder="Your message..." rows="7" required></textarea></td>
               </tr>
             </table>
-  
+
             <button type="submit">Send</button>
           </form>
         </div>
-      </section> 
+      </section>
     </main>
 
     <footer>
-      <p>Made by Group3 |
+      <p>
+        Made by Group3
         <code>
-            <span>Fadhli</span> - 
-            <span>Hans</span> - 
-            <span>Luthfi</span>
-        </code> 
+          <br />
+          <span>Hans</span> - <span> Luthfi</span> -
+          <span>Fadhli</span>
+        </code>
       </p>
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- <audio src="welcomeaudio.mp4" autoplay ></audio> -->
   </body>
 </html>
+
+<!-- 
+<form action="https://www.google.com/search" method="GET" target="_blank">
+              <input type="text" name="q" placeholder="Search on Google" required />
+              <button type="submit">Search</button>
+            </form> -->
+
+<!-- <nav>
+        <h1 class="logo">
+          <span style="color: aliceblue">Website Teknologi</span>
+        </h1>
+        <ul id="nav-menu">
+          <li><a href="#">Pendahuluan</a></li>
+          <li><a href="#image">Gambar</a></li>
+          <li><a href="#video">Video</a></li>
+          <li><a href="#contact">Kontak</a></li>
+          <li>
+            
+          </li>
+        </ul>
+      </nav> -->
