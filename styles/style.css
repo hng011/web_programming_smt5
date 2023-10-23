@@ -29,11 +29,18 @@ button {
   border-radius: 50px;
   background-color: rgb(6, 117, 26);
   color: white;
+  border-color: #fff;
 }
 
 button:hover {
-  background-color: rgb(26, 112, 58);
+  /* background-color: rgb(26, 112, 58); */
   cursor: pointer;
+}
+
+.btn-custom {
+  color: #fff;
+  border-color: #fff;
+  margin-left: 5px;
 }
 
 section {
@@ -68,7 +75,7 @@ section {
 
 .text-content {
   flex: 1;
-  max-width: 70%;
+  max-width: 90%;
 }
 
 @media screen and (max-width: 768px) {
@@ -107,12 +114,12 @@ nav {
   align-items: center;
 }
 
-#nav-menu a {
+a.nav-link, a.navbar-brand {
   color: #fff;
 }
 
-#nav-menu a:hover {
-  color: #005b41;
+a.nav-link:hover, a.navbar-brand:hover {
+  color: #1f2eb4;
 }
 
 .logo {
@@ -176,6 +183,12 @@ nav {
   filter: brightness(70%);
 }
 
+/* TEXT */
+.typing-text {
+  padding: 20px;
+  border: 1px solid white;
+}
+
 /* IMAGE SECTION */
 
 .imgs img {
@@ -221,9 +234,8 @@ nav {
 }
 
 .form-input {
-  width: 90%;
-  padding: 10px;
-  padding: 10px;
+  width: 98%;
+  padding: 5px;
   border-radius: 25px;
   border: 2px solid #ccc;
   margin: 5px 0 5px 5px;
@@ -231,6 +243,9 @@ nav {
 
 .contact-form button {
   width: 100%;
+  color: #000;
+  border-color: #000;
+  border-radius: 50px;
 }
 
 /* ========================= FOOTER SECTION ============================= */
@@ -239,8 +254,25 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
   padding: 20px;
   background-color: #1aacac;
+  align-items: center;
   /*change color*/
+}
+
+footer p {
+  display: flex;
+  margin-bottom: 0;
+  color: #fff;
+  align-items: center;
+}
+
+footer p span:nth-child(1) {
+  color: red;
+}
+footer p span:nth-child(2) {
+  color: green;
+}
+footer p span:nth-child(3) {
+  color: blue;
 }
