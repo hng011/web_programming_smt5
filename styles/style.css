@@ -126,6 +126,27 @@ a.nav-link:hover{
 a.navbar-brand:hover {
   transform: scale(1.1);
 }
+
+/* FORM LOGIN */
+.form-login {
+  padding: 5px 20px;
+}
+
+.btn-login-custom {
+  margin: 10px 0 0 0;
+}
+
+.form-login input {
+  border-radius: 10px;
+}
+
+/* SEARCH */
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+}
+
 /* ========================= MAIN SECTION ===============================*/
 
 /* HERO SECTION */
