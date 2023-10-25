@@ -116,23 +116,16 @@ nav {
 
 a.nav-link, a.navbar-brand {
   color: #fff;
+  transition: .2s;
 }
 
-a.nav-link:hover, a.navbar-brand:hover {
+a.nav-link:hover{
   color: #1f2eb4;
 }
 
-.logo {
-  color: #000;
-  transition: 0.3s;
-  width: 300px;
+a.navbar-brand:hover {
+  transform: scale(1.1);
 }
-
-.logo:hover {
-  cursor: pointer;
-  transform: scale(1.01);
-}
-
 /* ========================= MAIN SECTION ===============================*/
 
 /* HERO SECTION */
