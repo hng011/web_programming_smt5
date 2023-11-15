@@ -1,0 +1,31 @@
+body { 
+    margin: 0;
+    padding: 0;
+}
+
+table { 
+    margin: 0 auto; 
+}
+
+table tr td{
+    padding: 10px;
+}
+
+table, tr, td {
+    border: 1px solid black;
+}
+
+thead {
+    text-align: center;
+}
+
+header {
+    display: flex; 
+    justify-content: center;
+}
+
+.add-btn {
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+}

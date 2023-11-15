@@ -36,18 +36,20 @@
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Login </a>
                         <ul class="dropdown-menu">
                             <li>
-                                <form class="form-login">
+                                <form class="form-login" method="post" action="login.php">
                                     <div class="user-login">
-                                        <label for="login">Login</label>
-                                        <input type="text" placeholder="Your Username" name="login" id="login">
+                                        <label for="username">Username</label>
+                                        <input type="text" placeholder="Your Username" name="username" id="username" required>
                                     </div>
                                     <div class="pw-login">
                                         <label for="password">Password</label>
-                                        <input type="password" placeholder="Your Password" name="password" id="password">
+                                        <input type="password" placeholder="Your Password" name="password" id="password" required>
                                     </div>
                                     <div class="button">
-                                        <button class="btn btn-outline-success btn-login-custom" type="submit">Login</button>
-                                        <button class="btn btn-outline-primary btn-login-custom" type="submit">Register</button>
+                                        <input class="btn btn-outline-success btn-login-custom" type="submit" value="Login"></input>
+                                        <a href="#">
+                                            <span class="btn btn-outline-primary btn-login-custom">Register</span>                                        
+                                        </a>
                                     </div>
                                 </form>
                             </li>
